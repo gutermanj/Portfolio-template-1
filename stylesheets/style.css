@@ -286,6 +286,36 @@ ul {
 	padding: 20px;
 }
 
+.scroll-top-icon {
+	font-size: 45px;
+	position: fixed;
+	z-index: 25;
+	color: #e0e0e0;
+	margin-left: 90%;
+	margin-top: 175px;
+	border-style: solid;
+	border-width: 2px;
+	padding: 12px;
+	padding-left: 20px;
+	border-color: white;
+	border-radius: 40px;
+	width: 72px;
+	-o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+}
+
+.scroll-top-icon:hover {
+	border-color: #00bfa5;
+}
+
+.top-button {
+	cursor: pointer;
+}
+
 
 
 

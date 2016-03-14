@@ -90,6 +90,13 @@ $("li").click(function() {
 	}, 1000);
 });
 
+$(".top-button").click(function() {
+	setTimeout( function() {
+  		$("html, body").animate({ scrollTop: 0 }, 500);
+  		return false;
+	}, 200);
+});
+
 
 // Making window scroll to bottom when li is clicked
 
