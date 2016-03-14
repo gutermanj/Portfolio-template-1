@@ -63,10 +63,10 @@ span {
 .covers span:nth-child(7) { animation-delay: .857142s; }
 
 .loading {
-	position: absolute;
+	position: relative;
 	z-index: 20;
 	text-align: center;
-	margin-left: 35%;
+	margin-left: 0%;
 	margin-top: 20%;
 }
 
@@ -86,6 +86,10 @@ body {
 
 p, h1, h2, h3, h4, h5, h6, a {
 	font-family: 'Open Sans Condensed', sans-serif;	
+}
+
+.no-padding {
+	padding: 0px;
 }
 
 .my-title {
@@ -114,15 +118,18 @@ p, h1, h2, h3, h4, h5, h6, a {
 	margin-top: -20px;
 	padding: 10px;
 	color: #e0e0e0;
-	-webkit-animation-duration: 3s;
     -webkit-animation-delay: .5s;
+
 }
 
 .header-content-bottom {
 	background-color: #757575;
 	height: 150px;
 	color: black;
-	padding: 10px;
+	padding: 20px;
+	-webkit-box-shadow: 0px -9px 22px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -9px 22px -6px rgba(0,0,0,0.75);
+	box-shadow: 0px -9px 22px -6px rgba(0,0,0,0.75);
 }
 
 .header-content {
@@ -137,6 +144,146 @@ p, h1, h2, h3, h4, h5, h6, a {
 .full-name-details {
 	color: #9e9e9e;
 	padding-left: 20px;
+}
+
+.icon-top {
+	margin-top: 50px;
+	font-size: 50px;
+}
+
+
+.icon-top {
+  color: #e0e0e0;
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+
+.icon-top:hover { 
+	color: #00bfa5;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 787px) {
+	.menu-icon {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 786px) {
+   .full-name {
+   	font-size: 20px;
+   }
+
+   .full-name-details {
+   	font-size: 15px;
+   }
+
+   .header-content-bottom {
+   	display: none;
+   }
+
+   .header-content-top {
+   	margin-top: 0px;
+   }
+}
+
+.good-experience {
+	color: white;
+}
+
+
+.quote {
+	font-size: 15px;
+}
+
+.content-bottom-hr {
+	border-color: black;
+	width: 120%;
+}
+
+li {
+	float: left;
+	font-size: 20px;
+}
+
+.underline {
+	background-color: #00bfa5; /* same as link color */
+	display: block;
+	height: 2px;
+	width: 100%;
+	padding: 0;
+  -webkit-transform: scaleX(0);
+	transform: scaleX(0);
+  -webkit-transition: all 0.25s;
+	transition: all 0.25s;
+}
+
+li:hover .underline {
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+.active .underline {
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+li {
+	cursor: pointer;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.nav {
+	margin-top: 30px;
+	margin-left: 5%;
+}
+
+.nav-item {
+	margin-left: 20%;
+}
+
+.nav-icon {
+	font-size: 40px;
+}
+
+.home-content {
+	width: 100%;
+	background-color: #212121;
+	color: #e0e0e0;
+	padding: 20px;
+}
+
+.about-content {
+	width: 100%;
+	background-color: #212121;
+	color: #e0e0e0;
+	padding: 20px;
+}
+
+.work-content {
+	width: 100%;
+	background-color: #212121;
+	color: #e0e0e0;
+	padding: 20px;
+}
+
+.contact-content {
+	width: 100%;
+	background-color: #212121;
+	color: #e0e0e0;
+	padding: 20px;
 }
 
 
