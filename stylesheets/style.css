@@ -265,6 +265,11 @@ ul {
 	padding: 20px;
 }
 
+.home-content-part-2 {
+	position: relative;
+	z-index: 10;
+}
+
 .about-content {
 	width: 100%;
 	background-color: #212121;
@@ -288,18 +293,15 @@ ul {
 
 .scroll-top-icon {
 	font-size: 45px;
-	position: fixed;
-	z-index: 25;
 	color: #e0e0e0;
 	margin-left: 90%;
-	margin-top: 175px;
 	border-style: solid;
 	border-width: 2px;
-	padding: 12px;
-	padding-left: 20px;
+	padding: 10px;
+	padding-left: 18px;
 	border-color: white;
 	border-radius: 40px;
-	width: 72px;
+	width: 70px;
 	-o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -314,9 +316,20 @@ ul {
 
 .top-button {
 	cursor: pointer;
+	position: fixed;
+	z-index: 25;
+	margin-top: 240px;
+	margin-left: 85%;
 }
 
+.like-what-you-see {
+	text-align: center;
+}
 
+.main-content {
+	position: relative;
+	z-index: 12;
+}
 
 
 

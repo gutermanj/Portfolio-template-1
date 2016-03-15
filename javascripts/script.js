@@ -28,22 +28,22 @@ setTimeout( function() {
 setTimeout( function() {
 	$('.nav-item-1').removeClass('hidden');
 	$('.nav-item-1').addClass('animated fadeIn');
-}, 6000);
+}, 5000);
 
 setTimeout( function() {
 	$('.nav-item-2').removeClass('hidden');
 	$('.nav-item-2').addClass('animated fadeIn');
-}, 6300);
+}, 5300);
 
 setTimeout( function() {
 	$('.nav-item-3').removeClass('hidden');
 	$('.nav-item-3').addClass('animated fadeIn');
-}, 6600);
+}, 5600);
 
 setTimeout( function() {
 	$('.nav-item-4').removeClass('hidden');
 	$('.nav-item-4').addClass('animated fadeIn');
-}, 6900);
+}, 5900);
 
 // All of the loading events-------------
 
@@ -136,8 +136,22 @@ $('.nav-item-4').on('click', function() {
 });
 
 
+$(window).scroll(function(){
+    if($(window).scrollTop() > 250){
+       $(".top-button").fadeIn('slow');
+       $(".top-button").removeClass('hidden');
+    }
+    else{
+       $(".top-button").fadeOut('slow');
+    }
+});
+
+// Make top button go away if you can see real nav
+
 
 });
+
+
 
 
 
